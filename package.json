@@ -1,0 +1,19 @@
+{
+  "name": "predicate",
+  "description": "Predicate library for nodejs",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dhobbs/predicate.git"
+  },
+  "author": "Darren Hobbs (http://darrenhobbs.com)",
+  "directories": {
+    "lib": "."
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
