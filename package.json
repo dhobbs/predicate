@@ -15,7 +15,7 @@
     },
     "main" : "./lib/predicate",
     "scripts": {
-        "test": "node specs.js"
+        "test": "node ./spec/test.js"
     },
     "engines": {
         "node": "*"

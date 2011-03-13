@@ -1,10 +1,17 @@
+var vows = require('vows'),
+    assert = require('assert');
+
 var predicate = require('predicate');
 
-describe('predicate', function() {
+vows.describe('predicate').addBatch({
+    'the is predicate': {
+        topic: function() {return predicate.is("thing")},
 
-    it('has is predicate', function() {
-        expect(predicate.is("is")("is")).toBeTruthy();
-    })
-
-});
-
+        'is thing' : function(isA) {
+            assert.isTrue(isA("thing"));
+        },
+        'is not otherThing' : function(isA) {
+            assert.isFalse(isA("otherThing"));
+        }
+    }
+}).export(module);
